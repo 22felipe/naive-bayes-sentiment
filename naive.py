@@ -5,7 +5,7 @@ import unicodedata
 
 class MultinomialNaiveBayes: 
     
-    #variaveis para realizar o calculo de probabilidade
+    #iniciação das variaveis
     def __init__(self, alpha=1.0):
         self.alpha = alpha
         self.vocabularies = set()
@@ -59,7 +59,7 @@ class MultinomialNaiveBayes:
                 # Probabilidade Condicional das palavras: P(Palavra | Classe)
                 prob_palavras = 0
                 for word in words:
-                    #if word in self.vocabularies: # Ignora palavras que nunca viu no treino
+                    if word in self.vocabularies: # Ignora palavras que nunca viu no treino
                         # Suavização de Laplace aplicada aqui: (contagem + alpha) / (total_palavras + alpha * V)
                         count = self.word_counts[label][word]
                         prob_w_dado_c = (count + self.alpha) / (self.total_words_per_class[label] + self.alpha * num_v)
