@@ -82,6 +82,7 @@ if __name__ == "__main__":
     # dados de treino 
     X_treino = [
     # positivos
+    "o jogo é muito bom",
     "gameplay incrível e muito divertido",
     "gráficos lindos e história envolvente",
     "controles responsivos e jogabilidade fluida",
@@ -107,6 +108,7 @@ if __name__ == "__main__":
     "interface simples e fácil de usar",
     "animações muito bem feitas",
     "vale muito a pena comprar",
+    "exepriencia incrivel",
 
     # negativos
     "cheio de bugs e trava o tempo todo",
@@ -163,7 +165,7 @@ if __name__ == "__main__":
     # As respostas corretas para o treino (labels)
     y_treino = [
         #Positivos
-        "positivo","positivo","positivo","positivo","positivo",
+        "positivo", "positivo", "positivo","positivo","positivo","positivo","positivo",
         "positivo","positivo","positivo","positivo","positivo",
         "positivo","positivo","positivo","positivo","positivo",
         "positivo","positivo","positivo","positivo","positivo",
