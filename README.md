@@ -143,8 +143,6 @@ Saída:
 → Classificação: [NEGATIVO]
 ```
 
----
-
 Entrada:
 
 ```text
